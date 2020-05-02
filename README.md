@@ -24,11 +24,11 @@ http://localhost:8080/graphql
 ```graphql
 mutation {
   createUser(user: {
-   	name: "Neto",
+    name: "Neto",
     email: "neto@email.com"
   }) {
     name,
-  	email
+    email
   }
 }
 ```
@@ -37,7 +37,7 @@ mutation {
 ```graphql
 mutation {
   createBook(email: "neto@email.com", book: {
-   	title: "GraphQL For You"
+    title: "GraphQL For You"
   }) {
     title
   }
