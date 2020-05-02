@@ -13,12 +13,12 @@ public class UserService {
 
 	@Autowired
 	private UserRepository userRepository;
-	
-	public User create(User user) {
-        return this.userRepository.save(user);
-    }
 
-    public Optional<User> findUserByEmail(String email) {
-        return this.userRepository.findByEmail(email);
-    }
+	public User create(User user) {
+		return this.userRepository.save(user);
+	}
+
+	public Optional<User> findUserByEmail(String email) {
+		return this.userRepository.findByEmail(email);
+	}
 }

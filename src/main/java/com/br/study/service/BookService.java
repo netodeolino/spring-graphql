@@ -12,18 +12,18 @@ import com.br.study.repository.BookRepository;
 public class BookService {
 
 	@Autowired
-    private BookRepository bookRepository;
+	private BookRepository bookRepository;
 
-    @Autowired
-    private UserService userService;
+	@Autowired
+	private UserService userService;
 
-    public Book create(Book book, String email){
-        book.setUserOwner(this.userService.findUserByEmail(email).get());
-        return this.bookRepository.save(book);
-    }
+	public Book create(Book book, String email) {
+		book.setUserOwner(this.userService.findUserByEmail(email).get());
+		return this.bookRepository.save(book);
+	}
 
-    public Optional<Book> findBook(String title) {
-        return this.bookRepository.findByTitle(title);
-    }
+	public Optional<Book> findBook(String title) {
+		return this.bookRepository.findByTitle(title);
+	}
 
 }
