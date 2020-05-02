@@ -1,0 +1,10 @@
+type User {
+    name: String
+    email: String!
+    books: [Book]
+}
+
+input UserInput {
+    name: String
+    email: String
+}

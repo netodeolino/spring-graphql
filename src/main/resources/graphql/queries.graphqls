@@ -1,0 +1,9 @@
+type Query {
+    findUser(email: String): User
+    findBook(title: String): Book
+}
+
+type Mutation {
+    createBook(book: BookInput, email: String): Book
+    createUser(user: UserInput): User
+}

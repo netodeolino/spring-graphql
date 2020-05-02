@@ -1,0 +1,8 @@
+type Book {
+    title: String!
+    userOwner: User
+}
+
+input BookInput {
+    title: String
+}
