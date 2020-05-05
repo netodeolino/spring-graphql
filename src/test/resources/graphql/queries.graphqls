@@ -1,0 +1,10 @@
+query findUser {
+	user {
+		id
+		name
+		email
+		books [
+			title
+		]
+	}
+}
